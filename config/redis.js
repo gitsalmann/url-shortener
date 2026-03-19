@@ -1,4 +1,6 @@
 import { createClient } from "redis";
+console.log("REDIS URL:", process.env.REDIS_URL);
+
 export const client = createClient({
   url: process.env.REDIS_URL
 })
